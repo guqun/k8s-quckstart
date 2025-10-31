@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 788">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f2027;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#203a43;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c5364;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="containerGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fc6d26;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#fc6d26;stop-opacity:0.4" />
+    </linearGradient>
+
+    <linearGradient id="containerGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#326ce5;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#326ce5;stop-opacity:0.4" />
+    </linearGradient>
+
+    <linearGradient id="containerGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:0.4" />
+    </linearGradient>
+
+    <linearGradient id="containerGrad4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7b2cbf;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#7b2cbf;stop-opacity:0.4" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="788" fill="url(#bgGradient2)"/>
+
+  <!-- Pod Container (outer box) -->
+  <rect x="200" y="280" width="1000" height="300" rx="12" fill="none" stroke="#00d4ff" stroke-width="2" stroke-dasharray="8,4" opacity="0.5"/>
+  <text x="220" y="310" font-family="Arial, sans-serif" font-size="20" font-weight="600" fill="#00d4ff" opacity="0.7">
+    Job Pod
+  </text>
+
+  <!-- Four Containers -->
+  <!-- Runner Manager -->
+  <g transform="translate(240, 340)">
+    <rect width="200" height="200" rx="8" fill="url(#containerGrad1)"/>
+    <rect width="200" height="40" rx="8" fill="#fc6d26" opacity="0.3"/>
+    <text x="100" y="28" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle" fill="#fff">
+      RUNNER
+    </text>
+    <circle cx="100" cy="100" r="35" fill="none" stroke="#fff" stroke-width="2" opacity="0.5"/>
+    <text x="100" y="155" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#fff" opacity="0.9">
+      Manager
+    </text>
+    <text x="100" y="175" font-family="monospace" font-size="11" text-anchor="middle" fill="#fff" opacity="0.6">
+      Persistent
+    </text>
+  </g>
+
+  <!-- Helper Container -->
+  <g transform="translate(480, 340)">
+    <rect width="200" height="200" rx="8" fill="url(#containerGrad2)"/>
+    <rect width="200" height="40" rx="8" fill="#326ce5" opacity="0.3"/>
+    <text x="100" y="28" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle" fill="#fff">
+      HELPER
+    </text>
+    <polygon points="100,70 130,100 100,130 70,100" fill="none" stroke="#fff" stroke-width="2" opacity="0.5"/>
+    <text x="100" y="155" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#fff" opacity="0.9">
+      Clone/Upload
+    </text>
+    <text x="100" y="175" font-family="monospace" font-size="11" text-anchor="middle" fill="#fff" opacity="0.6">
+      Init Container
+    </text>
+  </g>
+
+  <!-- Build Container -->
+  <g transform="translate(720, 340)">
+    <rect width="200" height="200" rx="8" fill="url(#containerGrad3)"/>
+    <rect width="200" height="40" rx="8" fill="#00d4ff" opacity="0.3"/>
+    <text x="100" y="28" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle" fill="#fff">
+      BUILD
+    </text>
+    <rect x="65" y="75" width="70" height="50" rx="4" fill="none" stroke="#fff" stroke-width="2" opacity="0.5"/>
+    <text x="100" y="155" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#fff" opacity="0.9">
+      Execute Script
+    </text>
+    <text x="100" y="175" font-family="monospace" font-size="11" text-anchor="middle" fill="#fff" opacity="0.6">
+      User Image
+    </text>
+  </g>
+
+  <!-- Service Container (DinD) -->
+  <g transform="translate(960, 340)">
+    <rect width="200" height="200" rx="8" fill="url(#containerGrad4)"/>
+    <rect width="200" height="40" rx="8" fill="#7b2cbf" opacity="0.3"/>
+    <text x="100" y="28" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle" fill="#fff">
+      SERVICE
+    </text>
+    <circle cx="100" cy="100" r="30" fill="none" stroke="#fff" stroke-width="2" opacity="0.5"/>
+    <circle cx="100" cy="100" r="20" fill="none" stroke="#fff" stroke-width="2" opacity="0.5"/>
+    <text x="100" y="155" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#fff" opacity="0.9">
+      DinD Daemon
+    </text>
+    <text x="100" y="175" font-family="monospace" font-size="11" text-anchor="middle" fill="#fff" opacity="0.6">
+      docker:dind
+    </text>
+  </g>
+
+  <!-- Connection lines between containers -->
+  <line x1="440" y1="440" x2="480" y2="440" stroke="#00d4ff" stroke-width="2" opacity="0.4"/>
+  <line x1="680" y1="440" x2="720" y2="440" stroke="#00d4ff" stroke-width="2" opacity="0.4"/>
+  <line x1="920" y1="440" x2="960" y2="440" stroke="#00d4ff" stroke-width="2" opacity="0.4"/>
+
+  <!-- Title -->
+  <text x="700" y="120" font-family="Arial, sans-serif" font-size="56" font-weight="bold" text-anchor="middle" fill="#ffffff">
+    GitLab Runner on Kubernetes
+  </text>
+
+  <!-- Subtitle -->
+  <rect x="380" y="160" width="640" height="60" rx="8" fill="#326ce5" opacity="0.2"/>
+  <text x="700" y="200" font-family="Arial, sans-serif" font-size="36" font-weight="600" text-anchor="middle" fill="#00d4ff">
+    Part 2: Deep Dive into Container Architecture
+  </text>
+
+  <!-- Bottom Tag -->
+  <g transform="translate(700, 660)">
+    <rect x="-140" y="0" width="280" height="40" rx="20" fill="#fc6d26" opacity="0.2"/>
+    <text x="0" y="27" font-family="Arial, sans-serif" font-size="20" font-weight="500" text-anchor="middle" fill="#fca326">
+      4-Container Architecture
+    </text>
+  </g>
+
+  <!-- Decorative elements -->
+  <circle cx="150" cy="150" r="5" fill="#00d4ff" opacity="0.3"/>
+  <circle cx="1250" cy="150" r="5" fill="#fc6d26" opacity="0.3"/>
+  <circle cx="150" cy="638" r="5" fill="#7b2cbf" opacity="0.3"/>
+  <circle cx="1250" cy="638" r="5" fill="#326ce5" opacity="0.3"/>
+</svg>

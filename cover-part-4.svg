@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 788">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3c72;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2a5298;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e3c72;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="layerGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:0.7" />
+    </linearGradient>
+
+    <linearGradient id="layerGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#e67e22;stop-opacity:0.7" />
+    </linearGradient>
+
+    <linearGradient id="layerGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:0.7" />
+    </linearGradient>
+
+    <linearGradient id="layerGrad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:0.7" />
+    </linearGradient>
+
+    <linearGradient id="layerGrad5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1abc9c;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#16a085;stop-opacity:0.7" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="788" fill="url(#bgGradient4)"/>
+
+  <!-- Network Layers (5-layer architecture) -->
+  <!-- Layer 5: VPC -->
+  <g transform="translate(700, 280)">
+    <rect x="-480" y="0" width="960" height="55" rx="8" fill="url(#layerGrad1)"/>
+    <text x="0" y="35" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#fff">
+      5. VPC Network
+    </text>
+  </g>
+
+  <!-- Layer 4: Node -->
+  <g transform="translate(700, 350)">
+    <rect x="-420" y="0" width="840" height="50" rx="8" fill="url(#layerGrad2)"/>
+    <text x="0" y="33" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#fff">
+      4. Node Network
+    </text>
+  </g>
+
+  <!-- Layer 3: Pod -->
+  <g transform="translate(700, 415)">
+    <rect x="-360" y="0" width="720" height="45" rx="8" fill="url(#layerGrad3)"/>
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#fff">
+      3. Pod Network
+    </text>
+  </g>
+
+  <!-- Layer 2: Container -->
+  <g transform="translate(700, 475)">
+    <rect x="-300" y="0" width="600" height="40" rx="8" fill="url(#layerGrad4)"/>
+    <text x="0" y="27" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#fff">
+      2. Container Network
+    </text>
+  </g>
+
+  <!-- Layer 1: DinD -->
+  <g transform="translate(700, 530)">
+    <rect x="-240" y="0" width="480" height="35" rx="8" fill="url(#layerGrad5)"/>
+    <text x="0" y="24" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#fff">
+      1. DinD Internal Network
+    </text>
+  </g>
+
+  <!-- DNS Resolution Icon -->
+  <g transform="translate(200, 360)">
+    <circle cx="50" cy="50" r="40" fill="#16a085" opacity="0.3"/>
+    <text x="50" y="45" font-family="monospace" font-size="32" font-weight="bold" text-anchor="middle" fill="#1abc9c">
+      DNS
+    </text>
+    <text x="50" y="70" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#1abc9c">
+      10.0.0.2
+    </text>
+  </g>
+
+  <!-- Network Troubleshooting Icon -->
+  <g transform="translate(1100, 360)">
+    <circle cx="50" cy="50" r="40" fill="#e74c3c" opacity="0.3"/>
+    <path d="M 35 35 L 65 65 M 65 35 L 35 65" stroke="#e74c3c" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="50" cy="50" r="35" fill="none" stroke="#e74c3c" stroke-width="3"/>
+    <text x="50" y="110" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#e74c3c">
+      Resolution Failed
+    </text>
+  </g>
+
+  <!-- Arrow showing DNS flow -->
+  <g opacity="0.5">
+    <path d="M 300 410 Q 500 300 700 270" fill="none" stroke="#1abc9c" stroke-width="2" stroke-dasharray="5,3"/>
+    <polygon points="700,270 690,265 695,275" fill="#1abc9c"/>
+  </g>
+
+  <!-- Title -->
+  <text x="700" y="110" font-family="Arial, sans-serif" font-size="56" font-weight="bold" text-anchor="middle" fill="#ffffff">
+    GitLab Runner on Kubernetes
+  </text>
+
+  <!-- Subtitle -->
+  <rect x="300" y="150" width="800" height="60" rx="8" fill="#326ce5" opacity="0.2"/>
+  <text x="700" y="190" font-family="Arial, sans-serif" font-size="36" font-weight="600" text-anchor="middle" fill="#00d4ff">
+    Part 4: Solving DNS &amp; Network Issues
+  </text>
+
+  <!-- Bottom Tag -->
+  <g transform="translate(700, 650)">
+    <rect x="-230" y="0" width="460" height="40" rx="20" fill="#1abc9c" opacity="0.2"/>
+    <text x="0" y="27" font-family="Arial, sans-serif" font-size="20" font-weight="500" text-anchor="middle" fill="#1abc9c">
+      5-Layer Network Architecture
+    </text>
+  </g>
+
+  <!-- Decorative network nodes -->
+  <g opacity="0.2">
+    <circle cx="150" cy="300" r="6" fill="#00d4ff"/>
+    <circle cx="1250" cy="300" r="6" fill="#00d4ff"/>
+    <circle cx="150" cy="550" r="6" fill="#00d4ff"/>
+    <circle cx="1250" cy="550" r="6" fill="#00d4ff"/>
+    <line x1="150" y1="300" x2="150" y2="550" stroke="#00d4ff" stroke-width="1"/>
+    <line x1="1250" y1="300" x2="1250" y2="550" stroke="#00d4ff" stroke-width="1"/>
+  </g>
+
+  <!-- Background pattern - DNS queries -->
+  <g opacity="0.08" font-family="monospace" font-size="12" fill="#1abc9c">
+    <text x="50" y="240">nslookup registry.example.com</text>
+    <text x="900" y="240">dig @10.0.0.2 registry.example.com</text>
+    <text x="50" y="630">resolv.conf: nameserver 10.0.0.2</text>
+    <text x="850" y="630">dns_policy = "none"</text>
+  </g>
+</svg>

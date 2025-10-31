@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 788">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGradient5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#134e5e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#71b280;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#134e5e;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+
+    <radialGradient id="glowGrad">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1400" height="788" fill="url(#bgGradient5)"/>
+
+  <!-- Central Shield (Security) -->
+  <g transform="translate(700, 400)">
+    <ellipse cx="0" cy="0" rx="180" ry="180" fill="url(#glowGrad)"/>
+    <path d="M 0,-80 L 60,-60 L 60,40 Q 60,80 0,100 Q -60,80 -60,40 L -60,-60 Z"
+          fill="url(#shieldGrad)" opacity="0.8"/>
+    <path d="M 0,-60 L 40,-45 L 40,30 Q 40,60 0,75 Q -40,60 -40,30 L -40,-45 Z"
+          fill="none" stroke="#fff" stroke-width="2" opacity="0.5"/>
+    <text x="0" y="10" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#fff">
+      PROD
+    </text>
+  </g>
+
+  <!-- Four Pillars of Best Practices -->
+  <!-- Top Left: Monitoring -->
+  <g transform="translate(280, 300)">
+    <circle cx="0" cy="0" r="55" fill="#3498db" opacity="0.3"/>
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#3498db" stroke-width="2"/>
+    <g transform="translate(-20, -20)">
+      <polyline points="0,35 10,20 20,28 30,15 40,22" fill="none" stroke="#3498db" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <text x="0" y="85" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#3498db">
+      Monitoring
+    </text>
+  </g>
+
+  <!-- Top Right: Scaling -->
+  <g transform="translate(1120, 300)">
+    <circle cx="0" cy="0" r="55" fill="#9b59b6" opacity="0.3"/>
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#9b59b6" stroke-width="2"/>
+    <g transform="translate(-15, -15)">
+      <rect x="0" y="20" width="10" height="15" fill="#9b59b6" opacity="0.6"/>
+      <rect x="12" y="10" width="10" height="25" fill="#9b59b6" opacity="0.8"/>
+      <rect x="24" y="0" width="10" height="35" fill="#9b59b6"/>
+    </g>
+    <text x="0" y="85" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#9b59b6">
+      Auto-Scaling
+    </text>
+  </g>
+
+  <!-- Bottom Left: Resource Optimization -->
+  <g transform="translate(280, 500)">
+    <circle cx="0" cy="0" r="55" fill="#f39c12" opacity="0.3"/>
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#f39c12" stroke-width="2"/>
+    <g transform="translate(-18, -18)">
+      <rect x="0" y="0" width="36" height="36" rx="4" fill="none" stroke="#f39c12" stroke-width="2"/>
+      <rect x="6" y="6" width="24" height="24" rx="2" fill="#f39c12" opacity="0.6"/>
+      <rect x="12" y="12" width="12" height="12" rx="1" fill="#f39c12"/>
+    </g>
+    <text x="0" y="85" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#f39c12">
+      Resources
+    </text>
+  </g>
+
+  <!-- Bottom Right: High Availability -->
+  <g transform="translate(1120, 500)">
+    <circle cx="0" cy="0" r="55" fill="#e74c3c" opacity="0.3"/>
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#e74c3c" stroke-width="2"/>
+    <g transform="translate(-15, -15)">
+      <circle cx="8" cy="15" r="8" fill="#e74c3c" opacity="0.6"/>
+      <circle cx="22" cy="15" r="8" fill="#e74c3c" opacity="0.8"/>
+      <circle cx="15" cy="25" r="8" fill="#e74c3c"/>
+    </g>
+    <text x="0" y="85" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#e74c3c">
+      High Availability
+    </text>
+  </g>
+
+  <!-- Connecting lines to center -->
+  <line x1="320" y1="330" x2="600" y2="380" stroke="#10b981" stroke-width="1.5" opacity="0.3" stroke-dasharray="5,3"/>
+  <line x1="1080" y1="330" x2="800" y2="380" stroke="#10b981" stroke-width="1.5" opacity="0.3" stroke-dasharray="5,3"/>
+  <line x1="320" y1="470" x2="600" y2="420" stroke="#10b981" stroke-width="1.5" opacity="0.3" stroke-dasharray="5,3"/>
+  <line x1="1080" y1="470" x2="800" y2="420" stroke="#10b981" stroke-width="1.5" opacity="0.3" stroke-dasharray="5,3"/>
+
+  <!-- Title -->
+  <text x="700" y="110" font-family="Arial, sans-serif" font-size="56" font-weight="bold" text-anchor="middle" fill="#ffffff">
+    GitLab Runner on Kubernetes
+  </text>
+
+  <!-- Subtitle -->
+  <rect x="350" y="150" width="700" height="60" rx="8" fill="#10b981" opacity="0.2"/>
+  <text x="700" y="190" font-family="Arial, sans-serif" font-size="36" font-weight="600" text-anchor="middle" fill="#10b981">
+    Part 5: Production Best Practices
+  </text>
+
+  <!-- Bottom Tag -->
+  <g transform="translate(700, 660)">
+    <rect x="-200" y="0" width="400" height="40" rx="20" fill="#10b981" opacity="0.2"/>
+    <text x="0" y="27" font-family="Arial, sans-serif" font-size="20" font-weight="500" text-anchor="middle" fill="#10b981">
+      Battle-Tested Strategies
+    </text>
+  </g>
+
+  <!-- Checkmark badges -->
+  <g transform="translate(120, 120)">
+    <circle cx="0" cy="0" r="18" fill="#10b981" opacity="0.5"/>
+    <polyline points="-8,0 -3,6 8,-6" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(1280, 120)">
+    <circle cx="0" cy="0" r="18" fill="#10b981" opacity="0.5"/>
+    <polyline points="-8,0 -3,6 8,-6" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(120, 668)">
+    <circle cx="0" cy="0" r="18" fill="#10b981" opacity="0.5"/>
+    <polyline points="-8,0 -3,6 8,-6" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(1280, 668)">
+    <circle cx="0" cy="0" r="18" fill="#10b981" opacity="0.5"/>
+    <polyline points="-8,0 -3,6 8,-6" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Background code hints -->
+  <g opacity="0.06" font-family="monospace" font-size="13" fill="#10b981">
+    <text x="50" y="250">replicas: 3</text>
+    <text x="1150" y="250">cpu_limit: "2"</text>
+    <text x="50" y="600">prometheus.io/scrape</text>
+    <text x="1050" y="600">podAntiAffinity</text>
+  </g>
+
+  <!-- Decorative grid -->
+  <g opacity="0.08">
+    <circle cx="700" cy="400" r="150" fill="none" stroke="#10b981" stroke-width="1"/>
+    <circle cx="700" cy="400" r="220" fill="none" stroke="#10b981" stroke-width="1"/>
+    <circle cx="700" cy="400" r="290" fill="none" stroke="#10b981" stroke-width="1"/>
+  </g>
+</svg>

@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 788">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#141e30;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#243b55;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#141e30;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="pipelineGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fc6d26;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#fca326;stop-opacity:0.9" />
+    </linearGradient>
+
+    <linearGradient id="pipelineGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#326ce5;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#4a8ff7;stop-opacity:0.9" />
+    </linearGradient>
+
+    <linearGradient id="pipelineGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="788" fill="url(#bgGradient3)"/>
+
+  <!-- Pipeline Flow -->
+  <!-- Stage 1: Build -->
+  <g transform="translate(180, 320)">
+    <rect width="280" height="180" rx="12" fill="url(#pipelineGrad1)"/>
+    <rect x="10" y="10" width="260" height="50" rx="6" fill="#fff" opacity="0.15"/>
+    <text x="140" y="45" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#fff">
+      BUILD
+    </text>
+
+    <!-- Docker icon representation -->
+    <g transform="translate(90, 80)">
+      <rect width="100" height="20" rx="3" fill="#fff" opacity="0.3"/>
+      <rect y="25" width="100" height="20" rx="3" fill="#fff" opacity="0.3"/>
+      <rect y="50" width="100" height="20" rx="3" fill="#fff" opacity="0.3"/>
+    </g>
+
+    <text x="140" y="155" font-family="monospace" font-size="14" text-anchor="middle" fill="#fff" opacity="0.8">
+      docker build
+    </text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <g transform="translate(460, 410)">
+    <line x1="0" y1="0" x2="90" y2="0" stroke="#00d4ff" stroke-width="4"/>
+    <polygon points="90,0 75,-8 75,8" fill="#00d4ff"/>
+  </g>
+
+  <!-- Stage 2: Test -->
+  <g transform="translate(560, 320)">
+    <rect width="280" height="180" rx="12" fill="url(#pipelineGrad2)"/>
+    <rect x="10" y="10" width="260" height="50" rx="6" fill="#fff" opacity="0.15"/>
+    <text x="140" y="45" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#fff">
+      TEST
+    </text>
+
+    <!-- Checkmark icon -->
+    <g transform="translate(115, 80)">
+      <circle cx="25" cy="35" r="35" fill="none" stroke="#fff" stroke-width="3" opacity="0.4"/>
+      <polyline points="10,35 22,47 40,25" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+    </g>
+
+    <text x="140" y="155" font-family="monospace" font-size="14" text-anchor="middle" fill="#fff" opacity="0.8">
+      run tests
+    </text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <g transform="translate(840, 410)">
+    <line x1="0" y1="0" x2="90" y2="0" stroke="#00d4ff" stroke-width="4"/>
+    <polygon points="90,0 75,-8 75,8" fill="#00d4ff"/>
+  </g>
+
+  <!-- Stage 3: Deploy -->
+  <g transform="translate(940, 320)">
+    <rect width="280" height="180" rx="12" fill="url(#pipelineGrad3)"/>
+    <rect x="10" y="10" width="260" height="50" rx="6" fill="#fff" opacity="0.15"/>
+    <text x="140" y="45" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#fff">
+      DEPLOY
+    </text>
+
+    <!-- Kubernetes wheel icon -->
+    <g transform="translate(115, 95)">
+      <circle cx="25" cy="25" r="30" fill="none" stroke="#fff" stroke-width="3" opacity="0.4"/>
+      <polygon points="25,5 32,22 25,25 18,22" fill="#fff" opacity="0.8"/>
+      <polygon points="25,25 42,32 40,40 25,35" fill="#fff" opacity="0.8"/>
+      <polygon points="25,25 25,35 10,40 8,32" fill="#fff" opacity="0.8"/>
+    </g>
+
+    <text x="140" y="155" font-family="monospace" font-size="14" text-anchor="middle" fill="#fff" opacity="0.8">
+      kubectl apply
+    </text>
+  </g>
+
+  <!-- Git Push Icon (start) -->
+  <g transform="translate(80, 380)">
+    <circle cx="30" cy="30" r="25" fill="#fc6d26" opacity="0.3"/>
+    <text x="30" y="40" font-family="monospace" font-size="24" font-weight="bold" text-anchor="middle" fill="#fff">
+      git
+    </text>
+  </g>
+
+  <!-- Success Icon (end) -->
+  <g transform="translate(1270, 380)">
+    <circle cx="30" cy="30" r="25" fill="#10b981" opacity="0.3"/>
+    <text x="30" y="42" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#fff">
+      ✓
+    </text>
+  </g>
+
+  <!-- Title -->
+  <text x="700" y="120" font-family="Arial, sans-serif" font-size="56" font-weight="bold" text-anchor="middle" fill="#ffffff">
+    GitLab Runner on Kubernetes
+  </text>
+
+  <!-- Subtitle -->
+  <rect x="350" y="160" width="700" height="60" rx="8" fill="#326ce5" opacity="0.2"/>
+  <text x="700" y="200" font-family="Arial, sans-serif" font-size="36" font-weight="600" text-anchor="middle" fill="#00d4ff">
+    Part 3: Building a Complete CI/CD Pipeline
+  </text>
+
+  <!-- Bottom Tag -->
+  <g transform="translate(700, 660)">
+    <rect x="-200" y="0" width="400" height="40" rx="20" fill="#10b981" opacity="0.2"/>
+    <text x="0" y="27" font-family="Arial, sans-serif" font-size="20" font-weight="500" text-anchor="middle" fill="#34d399">
+      Build → Test → Deploy
+    </text>
+  </g>
+
+  <!-- Background Code Pattern -->
+  <g opacity="0.05" font-family="monospace" font-size="14" fill="#00d4ff">
+    <text x="100" y="250">stages: [build, test, deploy]</text>
+    <text x="100" y="580">image: docker:latest</text>
+    <text x="950" y="250">services: docker:dind</text>
+    <text x="950" y="580">kubectl apply -f deployment.yaml</text>
+  </g>
+
+  <!-- Decorative dots -->
+  <circle cx="700" cy="280" r="3" fill="#00d4ff" opacity="0.5"/>
+  <circle cx="700" cy="540" r="3" fill="#00d4ff" opacity="0.5"/>
+</svg>
